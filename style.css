@@ -1,0 +1,71 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-image: url("img/Quilt.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+body::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.66%;
+  background-image: url("img/Quilt.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.main-title {
+  color: rgb(240, 235, 235);
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  background-color: rgb(188, 100, 100);
+  text-align: center;
+  flex-direction: column;
+  vertical-align: middle;
+  height: 60px;
+}
+
+main {
+  color: peachpuff;
+}
+
+box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navigation {
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+head {
+  text-align: center;
+  border-width: 50px;
+}
+
+h1 {
+  color: rgb(188, 12, 12);
+  width: 50%;
+  border: 4px solid;
+  border-color: darkgreen;
+  background-color: bisque;
+  background-image: src= "img/Quilt.jpg";
+}
