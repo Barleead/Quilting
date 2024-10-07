@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+    <meta charset="utf-8" name="viewport"  content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Resources.css"/>
+    <title>Resources</title>
+  </head>
+
+  <body>
+
+  <!-- Google.maps provided the original code.  I moved the style information to my css page and added the class, added the title adjusted the size */ -->
+
+  <section class="map-container">
+    <h2>Google Maps</h2>
+    <iframe
+      title="Google"
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d183899.40559614793!2d-83.07886185000001!3d37.265699149999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1728223136065!5m2!1sen!2sus"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    >
+    </iframe>
+  </section>
+
+  <section class="C1">
+    <h2>Inches to cm converter</h2>
+    <p>Type a value in the Inches field to convert the value to cm:</p>
+
+    <p>
+      <label>Inches</label>
+      <input
+        id="inputInches"
+        type="number"
+        placeholder="Inches"
+        oninput="LengthConverter(this.value)"
+      />
+    </p>
+    <p>cm: <span id="outputcm"></span></p>
+
+    <script>
+      function LengthConverter(valNum) {
+        document.getElementById("outputcm").innerHTML = valNum / 0.3937;
+      }
+    </script>
+  </section>
+
+  <!-- <section class="C2">
+        <h2>Cm to inches converter</h2>
+        <p>Type a value in the cm field to convert the value to Inches:</p>
+
+        <p>
+          <label>Centimeters</label>
+          <input
+            id="inputcm"
+            type="number"
+            placeholder="Centimeters"
+            oninput="LengthConverter(this.value)"
+          />
+        </p>
+        <p>inches: <span id="outputInches"></span></p>
+
+        <script>
+          function LengthConverter(valNum) {
+            document.getElementById("outputinches").innerHTML =  valNum / 0.253937;
+          }
+        </script>
+      </section> -->
+</html>
+</body>

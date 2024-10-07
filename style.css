@@ -9,23 +9,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: white;
-}
-
-body::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0.66%;
-  background-image: url("img/Quilt.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: -1;
+  /* background-color: rgb(231, 112, 112); */
 }
 
 .main-title {
@@ -51,14 +35,9 @@ box {
 }
 
 #navigation {
-  text-align: right;
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   flex-direction: row;
-}
-head {
-  text-align: center;
-  border-width: 50px;
 }
 
 h1 {
@@ -68,4 +47,28 @@ h1 {
   border-color: darkgreen;
   background-color: bisque;
   background-image: src= "img/Quilt.jpg";
+}
+
+ul {
+  color: aqua;
+}
+
+.map-container {
+  display: flex;
+  color: black;
+  border: 5px 5px 5px 5px;
+  border-color: orangered;
+  align-items: center;
+  justify-content: center;
+  width: 300;
+  height: 250;
+  padding: 40px;
+}
+
+.Resources h2 {
+  color: rgb(216, 10, 10);
+  vertical-align: center;
+}
+.Resources {
+  background-image: url("img/fox.jpg");
 }
