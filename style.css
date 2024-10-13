@@ -9,7 +9,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* background-color: rgb(231, 112, 112); */
+  background-color: rgb(231, 112, 112);
 }
 
 .main-title {
@@ -17,7 +17,7 @@ body {
   display: flex;
   align-items: center;
   font-size: 32px;
-  background-color: rgb(188, 100, 100);
+  background-color: rgb(244, 163, 41);
   text-align: center;
   flex-direction: column;
   vertical-align: middle;
@@ -47,10 +47,11 @@ h1 {
   border-color: darkgreen;
   background-color: bisque;
   background-image: src= "img/Quilt.jpg";
+  text-wrap: wrap;
 }
 
 ul {
-  color: aqua;
+  color: rgb(236, 78, 144);
 }
 
 .map-container {
@@ -63,12 +64,4 @@ ul {
   width: 300;
   height: 250;
   padding: 40px;
-}
-
-.Resources h2 {
-  color: rgb(216, 10, 10);
-  vertical-align: center;
-}
-.Resources {
-  background-image: url("img/fox.jpg");
 }

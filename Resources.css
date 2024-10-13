@@ -1,0 +1,21 @@
+h2 {
+  color: rgb(216, 10, 10);
+  vertical-align: center;
+}
+
+p {
+  font-size: 1em;
+}
+
+body {
+  background-image: url("img/koala2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(214, 155, 148, 0.73);
+}
+
+iframe {
+  border-color: aquamarine;
+  border-width: 1em;
+  padding: 2px;
+}
