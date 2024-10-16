@@ -1,4 +1,5 @@
-h2 {
+h2,
+p {
   color: rgb(216, 10, 10);
   vertical-align: center;
 }
@@ -10,12 +11,39 @@ p {
 body {
   background-image: url("img/koala2.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 65%;
   background-color: rgb(214, 155, 148, 0.73);
+  background-position-y: bottom;
+  background-position-x: right;
+}
+
+body header h1 {
+  color: rgb(15, 14, 14);
+  text-align: center;
+  font-family: cursive;
+  font-size: 1em;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #ea865f;
+  font-size: 1.25em;
+}
+
+header li {
+  display: inline;
+  color: rgb(236, 78, 144);
 }
 
 iframe {
   border-color: aquamarine;
   border-width: 1em;
   padding: 2px;
+}
+
+box {
+  display: left;
 }

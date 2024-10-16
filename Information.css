@@ -1,5 +1,27 @@
-h1 {
-  color: thistle;
+body header h1 {
+  color: rgb(15, 14, 14);
   text-align: center;
   font-family: cursive;
+  font-size: 1em;
+}
+
+body h1 {
+  color: rgb(240, 113, 113);
+  text-align: center;
+  font-family: cursive;
+  font-size: 2em;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #ea865f;
+  font-size: 1.25em;
+}
+
+header li {
+  display: inline;
+  color: rgb(236, 78, 144);
 }

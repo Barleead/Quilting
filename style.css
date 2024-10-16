@@ -5,6 +5,8 @@ body {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   background-image: url("img/Quilt.jpg");
   background-size: cover;
   background-position: center;
@@ -12,56 +14,57 @@ body {
   background-color: rgb(231, 112, 112);
 }
 
-.main-title {
-  color: rgb(240, 235, 235);
-  display: flex;
-  align-items: center;
-  font-size: 32px;
-  background-color: rgb(244, 163, 41);
+body header h1 {
+  color: rgb(15, 14, 14);
   text-align: center;
-  flex-direction: column;
-  vertical-align: middle;
-  height: 60px;
+  font-family: cursive;
+  font-size: 1em;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #ea865f;
+  font-size: 1.25em;
+}
+
+header li {
+  display: inline;
+  color: rgb(236, 78, 144);
 }
 
 main {
-  color: peachpuff;
+  display: flex;
+  flex-direction: column;
 }
 
 box {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 5px;
 }
 
-#navigation {
-  display: flex;
-  justify-content: right;
-  flex-direction: row;
-}
-
-h1 {
+box h1,
+box h2 {
   color: rgb(188, 12, 12);
-  width: 50%;
+  width: 70%;
   border: 4px solid;
   border-color: darkgreen;
   background-color: bisque;
-  background-image: src= "img/Quilt.jpg";
-  text-wrap: wrap;
+  background-image: src= "img/Quijpg";
+
+  padding: 5px;
 }
 
-ul {
+header li {
+  display: inline;
   color: rgb(236, 78, 144);
 }
 
-.map-container {
-  display: flex;
-  color: black;
-  border: 5px 5px 5px 5px;
-  border-color: orangered;
-  align-items: center;
-  justify-content: center;
-  width: 300;
-  height: 250;
-  padding: 40px;
+.Directory {
+  display: list;
+  color: rgb(236, 78, 144);
 }
