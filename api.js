@@ -8,9 +8,16 @@ fetch("https://randomfox.ca/floof/")
   })
   .then((data) => {
     // Process the response data here
-    console.log(data);
+
+    const foxImage = document.createElement("img");
+    foxImage.src = data.image;
+    foxImage.alt = "Random Fox Image";
+    document.getElementById("API-container").appendChild(foxImage);
   })
   .catch((error) => {
     // errors? here
     console.error(error);
+    document.getElementById("API-container").innerHTML = (
+      <p>Didn't Load: ${error.message}</p>
+    );
   });
