@@ -17,7 +17,6 @@ fetch("https://randomfox.ca/floof/")
   .catch((error) => {
     // errors? here
     console.error(error);
-    document.getElementById("API-container").innerHTML = (
-      <p>Didn't Load: ${error.message}</p>
-    );
+    document.getElementById("API-container").innerHTML =
+      "Didn't Load: ${error.message}";
   });
