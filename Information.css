@@ -20,6 +20,7 @@ header {
   width: 100%;
   background-color: #ea865f;
   font-size: 1.25em;
+  position: fixed;
 }
 
 header li {
@@ -34,7 +35,7 @@ header li {
     padding: 20px;
   }
   img {
-    max-width: 100%;
-    height: auto;
+    max-width: 50%;
+    height: 330px;
   }
 }

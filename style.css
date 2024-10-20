@@ -29,6 +29,7 @@ header {
   width: 100%;
   background-color: #ea865f;
   font-size: 1.25em;
+  position: fixe;
 }
 
 header li {
