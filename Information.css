@@ -1,16 +1,17 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(74, 198, 156);
+}
+
 body header h1 {
   color: rgb(15, 14, 14);
   text-align: center;
   font-family: cursive;
   font-size: 1em;
   padding-right: 20px;
-}
-
-body h1 {
-  color: rgb(240, 113, 113);
-  text-align: center;
-  font-family: cursive;
-  font-size: 2em;
 }
 
 header {
@@ -20,7 +21,6 @@ header {
   width: 100%;
   background-color: #ea865f;
   font-size: 1.25em;
-  position: fixed;
 }
 
 header li {
@@ -28,14 +28,30 @@ header li {
   color: rgb(236, 78, 144);
 }
 
+box h2 {
+  color: rgb(160, 86, 86);
+  text-align: center;
+  font-family: cursive;
+  font-size: 2em;
+}
 #API-container {
-  body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 20px;
-  }
+  display: flex;
+  border: black 3px solid;
+  box-sizing: border-box;
+  border-radius: 1em;
+  padding: 1em;
+
   img {
-    max-width: 50%;
-    height: 330px;
+    border-radius: 1em;
+    height: 20em;
+    position: center;
   }
+}
+
+#tips-container {
+  display: flex;
+  border: black 3px solid;
+  box-sizing: border-box;
+  border-radius: 1em;
+  padding: 1em;
 }

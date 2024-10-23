@@ -1,4 +1,6 @@
 body {
+  display: flex;
+  flex-direction: column;
   background-color: #dfa590;
 }
 
@@ -40,4 +42,9 @@ box {
   border: 4px solid;
   border-color: darkgreen;
   background-color: bisque;
+}
+
+p {
+  color: rgb(255, 0, 0);
+  font-size: 1.5em;
 }
