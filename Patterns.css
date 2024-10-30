@@ -24,3 +24,10 @@ header li {
   display: inline;
   color: rgb(236, 78, 144);
 }
+
+#hometown {
+  justify-content: space-between;
+  /* display: inline; */
+  height: 400px;
+  width: 300px;
+}

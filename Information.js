@@ -1,6 +1,6 @@
 "use strict";
 let foxImage = null;
-let tipsTricks = null;
+/* Chris Metcalfe helped me with code for my API and tips trick */
 
 function fetchFoxes() {
   fetch("https://randomfox.ca/floof/")
@@ -31,7 +31,6 @@ function fetchFoxes() {
 }
 
 fetchFoxes();
-tipsTricks();
 
 let foxes = document.getElementById("freshFoxes");
 if (foxes) {
@@ -39,12 +38,30 @@ if (foxes) {
     console.log("foxes are clicked");
     fetchFoxes();
   });
+}
 
-  let tips = document.getElementById("tipsTricks");
-if (tips) {
-  tips.addEventListener("click", function () {
-    console.log("button clicked");
-    tipsTricks();
+const items = ["Tip-1", "Tip-2", "Tip-3", "Tip-4"]; // Define your items array here
+function fetchTips() {
+  const randomIndex = Math.floor(Math.random() * items.length);
+  console.log(`randomIndex: ${randomIndex},  items.length: ${items.length}`);
+  console.log(`tipsResult: ${items[randomIndex]}`);
+  tipsContainer.innerText = items[randomIndex];
+}
+
+let tipsContainer = document.getElementById("tipsTricksList");
+const button2 = document.getElementById("tipsTricksButton");
+if (tipsContainer && button2) {
+  button2.addEventListener("click", () => {
+    fetchTips();
   });
+}
 
-}}
+fetchTips();
+
+let trickyFoxesButton = document.getElementById("tipsTricksFoxes");
+if (trickyFoxesButton) {
+  trickyFoxesButton.addEventListener("click", () => {
+    if (foxes) fetchFoxes();
+    if (tipsContainer) fetchTips();
+  });
+}

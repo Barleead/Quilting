@@ -1,0 +1,359 @@
+Received: from MW4PR14MB5326.namprd14.prod.outlook.com (2603:10b6:303:185::16)
+ by CH3PR14MB6939.namprd14.prod.outlook.com with HTTPS; Fri, 4 Oct 2024
+ 20:33:15 +0000
+Received: from DB8PR06CA0032.eurprd06.prod.outlook.com (2603:10a6:10:100::45)
+ by MW4PR14MB5326.namprd14.prod.outlook.com (2603:10b6:303:185::16) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8026.18; Fri, 4 Oct
+ 2024 20:33:14 +0000
+Received: from DU6PEPF00009527.eurprd02.prod.outlook.com (2603:10a6:10:100::4)
+ by DB8PR06CA0032.outlook.office365.com (2603:10a6:10:100::45) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.8026.18 via Frontend Transport; Fri, 4 Oct 2024 20:33:13 +0000
+Authentication-Results: spf=pass (sender IP is 192.237.158.181)
+ smtp.mailfrom=cx.fatquartershop.com; dkim=pass (signature was verified)
+ header.d=cx.fatquartershop.com;dmarc=pass action=none
+ header.from=fatquartershop.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of cx.fatquartershop.com
+ designates 192.237.158.181 as permitted sender)
+ receiver=protection.outlook.com; client-ip=192.237.158.181;
+ helo=sender-2.outbound.gladly.email; pr=C
+Received: from sender-2.outbound.gladly.email (192.237.158.181) by
+ DU6PEPF00009527.mail.protection.outlook.com (10.167.8.8) with Microsoft SMTP
+ Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.8026.11 via
+ Frontend Transport; Fri, 4 Oct 2024 20:33:13 +0000
+X-IncomingTopHeaderMarker:
+ OriginalChecksum:0D89650C21C6A0594C8370EB19FECB8282AE070C6CD3C6BFC2EDF138E3E9FADB;UpperCasedChecksum:9625D9B0DAB48FA0846375AEFC0520A3CA7516AFFDF878ECFE304370398D2EBE;SizeAsReceived:1456;Count:15
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=cx.fatquartershop.com; q=dns/txt; s=pic; t=1728073992; x=1728081192;
+ h=in-reply-to: message-id: To: To: From: From: Subject: Subject: Content-Type: Mime-Version: Date: Sender: Sender;
+ bh=2iitsbhUIg/ZmGtL6cLFFs9Fl1UZgbJ7sCrQUUHpgV4=;
+ b=xLS/JI69n7tzEbdiMKAwCCgikCIvU3eGbfgIRQqxE4YUQ/aU/Qvscm07teQ/EjM8rC3iTaAULqu7HLJudCVdgs20/6slYO6Vx3z5iDRDmvuPiZdxNHSaHCPcNzNcTkgOuLGgDoUh5olYz5fwvyew4kqmCOwV34ZeYDRuktEvsNY=
+X-Mailgun-Sending-Ip: 192.237.158.181
+X-Mailgun-Sending-Ip-Pool:
+X-Mailgun-Sid: WyJmZmZhMyIsInN5cGVyX2Fka2luc0Btc24uY29tIiwiOGFmNjRiMSJd
+Received: by c6b72a089f7e with HTTP id 6700510897f8fb7007f1ab10; Fri, 04 Oct 2024
+ 20:33:12 GMT
+Sender: service=fatquartershop.com@cx.fatquartershop.com
+Date: Fri, 04 Oct 2024 20:33:12 +0000
+Content-Type: multipart/alternative;
+ boundary="8d3dacc6db73cc3447caff8d4ad095aef4bfd7d547d671e517c8311e8358"
+Subject: Fat Quarter Shop - Use of patterns in class project
+From: Fat Quarter Shop Customer Service <service@fatquartershop.com>
+To: syper_adkins@msn.com
+message-id: <t3OuDoK7SLS6u5AdxLGTgw@fatquartershop.com>
+in-reply-to: <CH3PR14MB69399033A2CC426767E566F3ED722@CH3PR14MB6939.namprd14.prod.outlook.com>
+X-Mailgun-Variables: {"communicationId":
+ "eyJvcmdJZCI6IlNrUDdPejIzUnlHRGF4MWVsNlEtQ2ciLCJjdXN0b21lcklkIjoiT3JsS3BoT2FUSmFiOFExVTFsYjZGdyIsImNvbnZlcnNhdGlvbkl0ZW1JZCI6InQzT3VEb0s3U0xTNnU1QWR4TEdUZ3cifQ"}
+X-IncomingHeaderCount: 15
+Return-Path: bounce+0b7d0e.8af64b1-syper_adkins=msn.com@cx.fatquartershop.com
+X-MS-Exchange-Organization-ExpirationStartTime: 04 Oct 2024 20:33:13.5214
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ f3e8d1d1-5541-4e8b-dcaf-08dce4b3c500
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic:
+ DU6PEPF00009527:EE_|MW4PR14MB5326:EE_|CH3PR14MB6939:EE_
+X-MS-Exchange-Organization-AuthSource:
+ DU6PEPF00009527.eurprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 10/4/2024 7:59:09 PM
+X-MS-Office365-Filtering-Correlation-Id: f3e8d1d1-5541-4e8b-dcaf-08dce4b3c500
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 192.237.158.181
+X-SID-PRA: SERVICE@FATQUARTERSHOP.COM
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam:
+ BCL:0;ARA:1444111002|461199028|58200799015|47200799018|9400799024|440099028|3412199025|1360799030|1370799030|1380799030|1122599013;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 04 Oct 2024 20:33:13.2402
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: f3e8d1d1-5541-4e8b-dcaf-08dce4b3c500
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource:
+ DU6PEPF00009527.eurprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg:
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MW4PR14MB5326
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.1837348
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.8026.016
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;ex:0;auth:1;dest:I;OFR:SpamFilterPass;ENG:(5062000308)(920221119095)(90000117)(920221120095)(90013020)(91025020)(91040095)(9050020)(9065024)(9100341)(1010050)(944500132)(2008001181)(4810010)(4910033)(9920006)(9510006)(10105021)(9320005)(9230038)(120001);
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MTtHRD0xO1NDTD0tMQ==
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?eFZ1WVFlbXhLSWJuSzUrZDY0Nm82U1VqSm8rVXJteHRUVENPRWQrUFhEalhG?=
+ =?utf-8?B?OHBYSXlON2RoN0lZSlJUUFd4SnZvYjdieDVRSkNkWGg1UlFZUmZKa3k2dkZi?=
+ =?utf-8?B?UXZpWnpQRStzWUJLSVlhMzRacTZrbEp1bkFySDJnZkRZM21GKzJnRS9PckNO?=
+ =?utf-8?B?NUU3cEpWSkRHTUZzaHlzMkZ5OCtaRmVjMHFTZEZsVHNlTTEwdktOUjdJLzRS?=
+ =?utf-8?B?Y0pKVVp5bUIrWE0zaVMwMmFYZm1MWlRmNjZOL29BR1hNSHozeFFYTURwOEF3?=
+ =?utf-8?B?SVc4SHVNTzR4dUtaTlJKSTFFSXdVV1pvazB1bFFXWDFhckNpcUIwaUlvQU5O?=
+ =?utf-8?B?bWM4L3JFU0tUT2lJdVRPYkcwbGJyR3Q5OS9XbEtBdXp0cVNJVWhlam5pK2FE?=
+ =?utf-8?B?YjZIaVovdUQ3VWticVNZRGYveGpOTE5ObHFXU2ZTTGtkeWhpNnp4S1hhNVY5?=
+ =?utf-8?B?K2ZOYk9nT0RlcFZnd21PRUpPSjFOb2ZCWjNUYVhiM2NncTdyZWhDbWIrcktj?=
+ =?utf-8?B?aitGY2FIQjZ3eW8yVFdGOVIzYVRZR1l3bTdQRnhQT1A3b090ajV3ZXJyT3RY?=
+ =?utf-8?B?SW1NTjljWmZzejZOaXVWTS90QlZkbWJWdTVpaTRCamUvK09DZHRNdnE4NEk3?=
+ =?utf-8?B?NXRGcDg2YURqZTA1QThhamFVMTZQQ0VsblFUa0pQaXJ1MjVDUkhEdFBuc2w2?=
+ =?utf-8?B?NlpQMHpnc205aUxVLzlWaUFKQ0ZZdHlmSFJFdERaRGwrZlFqQ2x4c0tHdTRI?=
+ =?utf-8?B?TitwWlF6RnNPYUc5ZEJ0cXVkTzdzcVlTUFBvRUVpbmMzL0pyM2c1T1hVN2s1?=
+ =?utf-8?B?SU94RU53c2tRQ3lHL05rbFZhUUpOb0dYdVBidEh1U2JpUmE2N09GY3hrZk1r?=
+ =?utf-8?B?cWFaM2tNVkxTRnVBZkN3K1pIOWtvemN6VUJTcjEwUFh3WDNGS3pTdXF5Mk41?=
+ =?utf-8?B?NHZmVS9RUGlpMm9reHB3TC9PYXBlcHZjanhWeUhWL0pmckxMVXBJT3o3S3ZZ?=
+ =?utf-8?B?Z3lXZjlkRHIrS2pNdE1rVWRkY21aU2pRT00zeHYreUhKVmd1c1N5a3RvWE11?=
+ =?utf-8?B?dEJFNndPSjVPWlNXV1NYSDZmUm5IbVhYN0dPd0RyNmdLTTVrMVl6NTBtNUhI?=
+ =?utf-8?B?VFNrS1N6UlVHZE5IRW9nK2xTdkEwRmpSeHRHY3FSejY5KzBqYUFoVVF6ek9M?=
+ =?utf-8?B?ZXZLNEQwUlN6cjM2R0tuTHpwVVF0VWVaOGpubkFQQzVPNkFDblV6UVByNk1N?=
+ =?utf-8?B?aElDUXlKVHFzWUdNSUwwaGVMdUo3dHhVeG1VU0c4ZFFuMU1kU1FpOWFTWHFW?=
+ =?utf-8?B?TGt2S04ycHpuQU9BblRwZVhua2xFVGo0WmpQa0t3bHE5WGlnS3NrdmdvTzlZ?=
+ =?utf-8?B?S2UrbWs2ZzBBMm5uY0Q3RnRUU0JUb0RBY2JpaFdhWTVyNlpGdURuSWZTNmRh?=
+ =?utf-8?B?U0RzK2dKbzRCMzJxeTVYbnJ3RHNaalFjUVAwTTNXK2hDR1NWQllwVytKZEFM?=
+ =?utf-8?B?MUdqRWlhbXJ3RmFjcFBEeGFBd0dmMm5ndEtQMzhLNnRvQnplZEMvd1U1emkr?=
+ =?utf-8?B?SHRPUmw3cksyQWJsTTQwV1cxNGhDdW1OQ09NY2RHNVFaRXNXZmZtMVNMc0pG?=
+ =?utf-8?B?VFBJY3JtVmprY25zend6cnpQUk9pTW1JbHdwRERuN1FTWk9jdFVub1liNEtm?=
+ =?utf-8?B?Tjd0N29PSitUdHJZWk1KOFdYY1I0U2pQSGRFNEVVVmE5dS84eDZOWklzSGpB?=
+ =?utf-8?B?emFmekNLeFZqZXNHNFZMYStUWFFOQjJZNnZOV0EzdWFpdkhaTHIvWnk2YWRS?=
+ =?utf-8?B?eVBGaTk0TVVjMzVyNWxJNkY4eHptWTVIWGZ2aEkxMkFCNldISWt3cmpvSzY4?=
+ =?utf-8?B?QTVoZXBWME5wbWNVT1U2L2VCMVVwcmpBeUxiNmc0QjNYTnNkRmxZVzQ5NjB3?=
+ =?utf-8?B?TVF6V3N1cmVPVTB4OGFQY2FmbEZ0NlFUZzQwN2hKc0Z3eW5IVHgrWEFDNUpm?=
+ =?utf-8?B?eTVYL0lWdnFkL2UrVTVXWW40bk0wOHg2Y045ZkwyU2pvVHhleVZqMWdiMncv?=
+ =?utf-8?B?ZS9ldW1nZDF2V3FycU1kQ3lWZ3JNNW1KRithRnhHUHZlKzdDdTNjVzVqZWkz?=
+ =?utf-8?B?ZEZwa01lRFUyYnMzaGM4L2RNeEEwY01DYldLMHI5eXpxWFdrN0Ftek11TkVo?=
+ =?utf-8?B?dExvdzdqbER2Q3hWcEFUWFhEUFZGcTNZeEprVEhXMnptcitoSzZwTCtNZk1t?=
+ =?utf-8?B?R0FQL1pSdlpCWCt5NXI1M3ZlU2toemRGMm90bDFubE1qZ1hiRk94WUpHT3B3?=
+ =?utf-8?B?ekRrZUcyajNUSUJUejByYUs2dnUyMmtXYkpPSDJTR2RtcTh1UFVZZmlEdFMw?=
+ =?utf-8?B?KzNSVUZuZDQwVU9CVk1qb0Z0NFROeEZOb1YzSk5CNitUSzRUQzdTMXd3c0dO?=
+ =?utf-8?B?eVV1am9WcGxYNkVTcG9jQmRPc3l3S1IzVlFjUXJCbUYwMzhvdHpnTlg5OTFU?=
+ =?utf-8?B?bTVKQkxlM2x0cTMxZk0xMG9LWmlMVzdsOG1EM1VsL0R3WEZNSEI0THYzVC9L?=
+ =?utf-8?B?U2lqdlhCYVdSWDB6QmtmUEI2M2J3azJNWjJtdEtpS2hUVDQ3WjN2UUlmQ0lm?=
+ =?utf-8?B?aGN2R1dIRXNmUW5WQ0IwVXl4MFU1UDVTTlBCSS9MZWhWL29HTnpQeWZBbC8r?=
+ =?utf-8?Q?ffmM?=
+MIME-Version: 1.0
+
+--8d3dacc6db73cc3447caff8d4ad095aef4bfd7d547d671e517c8311e8358
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="utf-8"
+
+Hello Barbi,=20
+Thank you for choosing Fat Quarter Shop!
+
+I got your message. We actually get asked this question frequently!
+
+The standard for free patterns is as follows:
+=E2=80=8B=E2=80=8BWe do not allow our free patterns to be mass produced for=
+ groups, guilds, classes, etc.=C2=A0 The guilds can email their members the=
+ links to a free pattern on the Fat Quarter Shop website as a resource, whe=
+re members can choose to view, download and print the pattern individually =
+from Fat Quarter Shop. However, it cannot be linked to a class or event whe=
+re a fee is paid as that would, by our definition, fall under commercial us=
+e. =C2=A0 Additionally, we do allow guilds or other organizations to use FQ=
+S free patterns to make quilts for raffles and fundraisers.=C2=A0
+
+On a side note, if you are printing the pattern for a friend (not mass prin=
+ting it or selling it) then you would be ok to print it for them.=C2=A0 I w=
+ould suggest having guild members who can't print their  pattern reach out =
+for help separately to friends. =20
+
+In your case since you are referencing us and using the pattern for your pr=
+oject with no intent to sell or print the pattern for others to use you sho=
+uld be just fine crediting us as you plan.
+
+I hope this has been helpful, but please let us know if you have any other =
+questions and we'll do our best!=E2=80=8B=E2=80=8B=E2=80=8B=E2=80=8B=E2=80=
+=8B
+Have a great day and good luck with your project!=20
+
+Michelle Moss=C2=A0
+Customer Service Team
+1-866-826-2069
+Fat Quarter Shop=20
+www.fatquartershop.com
+
+On Friday, October 4, 2024, 8:14 AM "Barbi Adkins" <syper_adkins@msn.com> w=
+rote:
+
+> Good morning,
+>=20
+> I am a student of Code Kentucky and am working on a capstone project rega=
+rding quilting.   I would like to use some of the patterns on your page in =
+my project.    I plan to give credit to any site that gives me access to th=
+e images and links to the patterns.   This may change in the future as far =
+as layout but the information in the example below would remain the same:
+>=20
+> The pattern below is known as _____________.   Image and pattern provided=
+ by Fat Quarter Shop (https://linkprotect.cudasvc.com/url?a=3Dhttps%3a%2f%2=
+fwww.fatquartershop.com&c=3DE,1,8FO01GVXZLSJbWvxscjsSwokwg8vvHZ8raX3HivfFJj=
+JrxKlKt-UOra5AkNUu7FrCD8fyeyJqYku5luzyY9GCBC37kgq96jiubQe4x_vTg,,&typo=3D1)=
+=2E   Direct link to the patterns are provided for your convenience.
+>=20
+>=20
+>=20
+> =E2=80=82=E2=80=82=E2=80=82=E2=80=82=E2=80=82=E2=80=82=E2=80=82=E2=80=82=
+=E2=80=82=E2=80=82=E2=80=82=E2=80=82<picture of pattern>
+>=20
+> =E2=80=82=E2=80=82=E2=80=82=E2=80=82=E2=80=82=E2=80=82
+> =E2=80=82=E2=80=82=E2=80=82=E2=80=82=E2=80=82=E2=80=82=E2=80=82=E2=80=82=
+=E2=80=82=E2=80=82=E2=80=82=E2=80=82<name of pattern>
+> =E2=80=82=E2=80=82=E2=80=82=E2=80=82=E2=80=82=E2=80=82=E2=80=82=E2=80=82=
+=E2=80=82=E2=80=82=E2=80=82=E2=80=82<link to pattern>
+>=20
+>=20
+>=20
+> If you have any questions please let me know. Thank you for your time.
+>=20
+>=20
+> Barbara Adkins
+> Code:You/Code Kentucky student
+> syper_adkins@msn.com
+> 606-233-9373
+>=20
+
+--8d3dacc6db73cc3447caff8d4ad095aef4bfd7d547d671e517c8311e8358
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="utf-8"
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"></=
+head><body><div>Hello Barbi, </div><div>Thank you for choosing Fat Quarter =
+Shop!</div><div><br></div><div>I got your message. We actually get asked th=
+is question frequently!</div><div><br></div><div>The standard for free patt=
+erns is as follows:</div><div>=E2=80=8B=E2=80=8BWe do not allow our free pa=
+tterns to be mass produced for groups, guilds, classes, etc.&nbsp; The guil=
+ds can email their members the links to a free pattern on the Fat Quarter S=
+hop website as a resource, where members can choose to view, download and p=
+rint the pattern individually from Fat Quarter Shop. However, it cannot be =
+linked to a class or event where a fee is paid as that would, by our defini=
+tion, fall under commercial use. &nbsp; Additionally, we do allow guilds or=
+ other organizations to use FQS free patterns to make quilts for raffles an=
+d fundraisers.&nbsp;</div><div><br></div><div>On a side note, if you are pr=
+inting the pattern for a friend (not mass printing it or selling it) then y=
+ou would be ok to print it for them.&nbsp; I would suggest having guild mem=
+bers who can't print their  pattern reach out for help separately to friend=
+s.  </div><div><br></div><div>In your case since you are referencing us and=
+ using the pattern for your project with no intent to sell or print the pat=
+tern for others to use you should be just fine crediting us as you plan.</d=
+iv><div><br></div><div>I hope this has been helpful, but please let us know=
+ if you have any other questions and we'll do our best!=E2=80=8B=E2=80=8B=
+=E2=80=8B=E2=80=8B=E2=80=8B</div><div>Have a great day and good luck with y=
+our project! </div><div><br></div><div>Michelle Moss&nbsp;</div><div><span =
+style=3D"color:#000000">Customer Service Team</span></div><div>1-866-826-20=
+69</div><div><span style=3D"color:#000000">Fat Quarter Shop </span></div><d=
+iv><a href=3D"http://www.fatquartershop.com/" target=3D"_blank" rel=3D"noop=
+ener noreferrer"><span style=3D"color:#2650b2">www.fatquartershop.com</span=
+></a></div><div><br><div><div>On Friday, October 4, 2024, 8:14 AM &quot;Bar=
+bi Adkins&quot; &lt;syper_adkins@msn.com&gt; wrote:</div><div dir=3D"auto">=
+<blockquote style=3D"margin:0.5ex 0 0 0.8ex;border-left:1px #ccc solid;padd=
+ing-left:1ex">
+
+
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+
+
+<div class=3D"elementToProof" style=3D"font-family: Calibri, Helvetica, san=
+s-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+Good morning,</div>
+<div class=3D"elementToProof" style=3D"font-family: Calibri, Helvetica, san=
+s-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Calibri, Helvetica, san=
+s-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+I am a student&nbsp;of Code Kentucky and am working on a capstone&nbsp;proj=
+ect regarding quilting.&nbsp; &nbsp;I would like&nbsp;to use some of the pa=
+tterns on your page in my project.&nbsp; &nbsp; I plan to give credit to an=
+y site that gives me&nbsp;access to the images and links&nbsp;to the patter=
+ns.&nbsp;
+ &nbsp;This may change in the future as far as layout but the information i=
+n the example below would remain the same:</div>
+<div class=3D"elementToProof" style=3D"font-family: Calibri, Helvetica, san=
+s-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Calibri, Helvetica, san=
+s-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+The pattern below is known&nbsp;as _____________.&nbsp; &nbsp;Image and pat=
+tern provided by Fat Quarter Shop (<a href=3D"https://linkprotect.cudasvc.c=
+om/url?a=3Dhttps%3a%2f%2fwww.fatquartershop.com&amp;c=3DE,1,8h7wHL9haAMDCKv=
+QcHafy1BTIuqk_MpGe_u08bFMF6q_Wx__L4oqI8yjaZt5GnGodB4cgY0cA2iP3Mh5elB3_cUknf=
+Sd6bnsZS2rnIfpu5M2pgWBdIip&amp;typo=3D1&amp;ancr_add=3D1">www.fatquartersho=
+p.com</a>).&nbsp; &nbsp;Direct link to the patterns are provided for your c=
+onvenience.</div>
+<div class=3D"elementToProof" style=3D"font-family: Calibri, Helvetica, san=
+s-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Calibri, Helvetica, san=
+s-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Calibri, Helvetica, san=
+s-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Calibri, Helvetica, san=
+s-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+=E2=80=82=E2=80=82=E2=80=82=E2=80=82=E2=80=82=E2=80=82=E2=80=82=E2=80=82=E2=
+=80=82=E2=80=82=E2=80=82=E2=80=82&lt;picture of pattern&gt;</div>
+<div class=3D"elementToProof" style=3D"font-family: Calibri, Helvetica, san=
+s-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Calibri, Helvetica, san=
+s-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+=E2=80=82=E2=80=82=E2=80=82=E2=80=82=E2=80=82=E2=80=82</div>
+<div class=3D"elementToProof" style=3D"font-family: Calibri, Helvetica, san=
+s-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+=E2=80=82=E2=80=82=E2=80=82=E2=80=82=E2=80=82=E2=80=82=E2=80=82=E2=80=82=E2=
+=80=82=E2=80=82=E2=80=82=E2=80=82&lt;name of pattern&gt;</div>
+<div class=3D"elementToProof" style=3D"font-family: Calibri, Helvetica, san=
+s-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+=E2=80=82=E2=80=82=E2=80=82=E2=80=82=E2=80=82=E2=80=82=E2=80=82=E2=80=82=E2=
+=80=82=E2=80=82=E2=80=82=E2=80=82&lt;link to pattern&gt; &nbsp;&nbsp;</div>
+<div class=3D"elementToProof" style=3D"font-family: Calibri, Helvetica, san=
+s-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Calibri, Helvetica, san=
+s-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Calibri, Helvetica, san=
+s-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Calibri, Helvetica, san=
+s-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+If you have any&nbsp;questions please&nbsp;let me know. Thank you&nbsp;for =
+your time.</div>
+<div class=3D"elementToProof" style=3D"font-family: Calibri, Helvetica, san=
+s-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Calibri, Helvetica, san=
+s-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Calibri, Helvetica, san=
+s-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+Barbara Adkins</div>
+<div class=3D"elementToProof" style=3D"font-family: Calibri, Helvetica, san=
+s-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+Code:You/Code Kentucky student</div>
+<div class=3D"elementToProof" style=3D"font-family: Calibri, Helvetica, san=
+s-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+syper_adkins@msn.com</div>
+<div class=3D"elementToProof" style=3D"font-family: Calibri, Helvetica, san=
+s-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+606-233-9373</div>
+<div id=3D"Signature" class=3D"elementToProof"></div>
+
+
+</blockquote></div></div><br></div></body></html>=
+
+--8d3dacc6db73cc3447caff8d4ad095aef4bfd7d547d671e517c8311e8358--
