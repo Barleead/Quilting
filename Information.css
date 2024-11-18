@@ -3,11 +3,11 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgb(74, 198, 156);
+  background-color: rgb(125, 241, 202);
 }
 
-body header h1 {
-  color: rgb(15, 14, 14);
+body header h2 {
+  color: rgb(34, 26, 26);
   text-align: center;
   font-family: cursive;
   font-size: 1em;
@@ -23,9 +23,84 @@ header {
   font-size: 1.25em;
 }
 
-header li {
-  display: inline;
-  color: rgb(236, 78, 144);
+box h2 {
+  color: rgb(160, 86, 86);
+  text-align: center;
+  font-family: cursive;
+  font-size: 2em;
+}
+
+box h3 {
+  display: flex;
+}
+
+/* Define styles for the custom header */
+.top-nav {
+  background-color: #ea865f;
+  color: #c68585;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+/* Style for the header links container */
+.nav-links {
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+}
+
+.nav-links a {
+  margin: 0 0.25em;
+}
+
+/* Style for the hamburger menu container */
+.ham-menu {
+  display: none; /* Initially hide the hamburger menu */
+  cursor: pointer;
+}
+
+/* Style for the individual bars in the hamburger menu icon */
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #0d0d0d;
+  margin: 6px 0;
+}
+
+/* Media query for responsive design - screens with a width up to 768px */
+@media only screen and (max-width: 768px) {
+  /* Adjust styles for header links on smaller screens */
+  .nav-links {
+    display: none; /* Hide box elements on smaller screens */
+    flex-direction: column;
+    position: absolute;
+    top: 4em;
+    left: 1em;
+    background-color: rgb(233, 183, 150);
+    width: 90%;
+  }
+
+  /* Show header links on click for smaller screens */
+  .nav-links.show {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-links.show a {
+    padding: 1em;
+    border: black 1px solid;
+    border-radius: 10px;
+  }
+
+  /* Adjust styles for individual header links in mobile view */
+  .nav-link {
+    margin: 0; /* Remove margin between links in mobile view */
+  }
+
+  /* Display the hamburger menu on smaller screens */
+  .ham-menu {
+    display: block;
+  }
 }
 
 box h2 {
@@ -54,4 +129,25 @@ box h2 {
   box-sizing: border-box;
   border-radius: 1em;
   padding: 1em;
+}
+
+#tipsTricksButton {
+  background-color: blanchedalmond;
+  color: green;
+  height: 2em;
+  border-radius: 1em;
+}
+
+#freshFoxes {
+  background-color: blanchedalmond;
+  color: green;
+  height: 2em;
+  border-radius: 1em;
+}
+
+#tipsTricksFoxes {
+  background-color: blanchedalmond;
+  color: green;
+  height: 2em;
+  border-radius: 1em;
 }

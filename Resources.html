@@ -13,16 +13,22 @@
   <!-- Google.maps provided the original code for the embedded map.  I moved the style information to my css page and added the class, adjusted the size. -->
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="Resources.html">Resources</a></li>
-          <li><a href="Information.html">Information</a></li>
-          <li><a href="Patterns.html">Patterns</a></li>
-          <li><a href="Contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <h1>Resources - I 💞️ Quilting</h1>
+      <div class="top-nav">
+        <div class="ham-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+
+        <div class="nav-links">
+          <a href="home.html">Home</a>
+          <a href="Resources.html">Resources</a>
+          <a href="Information.html">Information</a>
+          <a href="Patterns.html">Patterns</a>
+          <a href="Contact.html">Contact</a>
+        </div>
+      </div>
+      <h2>Resources - I 💞️ Quilting</h2>
     </header>
 
     <box class="map-container">
@@ -111,5 +117,7 @@
       // Initialize the conversion display on page load.
       updateConversionType();
     </script>
+
+    <script src="mobile.js"></script>
   </body>
 </html>

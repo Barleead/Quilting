@@ -27,21 +27,18 @@ header {
   color: #c68585;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 1rem;
 }
 
 /* Style for the header links container */
 .nav-links {
   display: flex;
-  align-items: center;
+  align-items: left;
+  justify-content: space-between;
 }
 
-/* Style for each individual header link */
-.nav-link {
-  display: inline-block;
-  margin-right: 1rem;
-  padding: 1rem;
+.nav-links a {
+  margin: 0 0.25em;
 }
 
 /* Style for the hamburger menu container */
@@ -65,16 +62,21 @@ header {
     display: none; /* Hide box elements on smaller screens */
     flex-direction: column;
     position: absolute;
-    top: 3rem;
-    left: 0;
+    top: 4em;
+    left: 1em;
     background-color: rgb(233, 183, 150);
-    width: 100%;
+    width: 90%;
   }
 
   /* Show header links on click for smaller screens */
   .nav-links.show {
     display: flex;
     flex-direction: column;
+  }
+  .nav-links.show a {
+    padding: 1em;
+    border: black 1px solid;
+    border-radius: 10px;
   }
 
   /* Adjust styles for individual header links in mobile view */
