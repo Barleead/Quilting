@@ -6,7 +6,7 @@ This project is about something near and dear to my heart…quilting. When I was
 
 **I have broken the project into 5 sections**:
 
-- **Home**: a welcome and thank you for visiting
+- **[Home](home.html)**: a welcome and thank you for visiting
 - **Information**: This is a page for tips/tricks for quilting and other crafts.
 - **Resources**: This page has the map and the inch/centimeter converter.
 - **Patterns**: just a few of my favorites with links to Fat Quarter Quilts where you can browse their site and maybe find your own favorites.
