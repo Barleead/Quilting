@@ -89,10 +89,235 @@ header {
     display: block;
   }
 }
+body {
+  display: flex;
+  background-color: #dfa590;
+}
 
+body header h2 {
+  color: rgb(15, 14, 14);
+  text-align: right;
+  font-family: cursive;
+  font-size: 1em;
+  padding-right: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #ea865f;
+  font-size: 1.25em;
+}
+
+/* Define styles for the custom header */
+.top-nav {
+  background-color: #ea865f;
+  color: #c68585;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+/* Style for the header links container */
+.nav-links {
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+}
+
+.nav-links a {
+  margin: 0 0.25em;
+}
+
+/* Style for the hamburger menu container */
+.ham-menu {
+  display: none; /* Initially hide the hamburger menu */
+  cursor: pointer;
+}
+
+/* Style for the individual bars in the hamburger menu icon */
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #0d0d0d;
+  margin: 6px 0;
+}
+
+/* Media query for responsive design - screens with a width up to 768px */
+@media only screen and (max-width: 768px) {
+  /* Adjust styles for header links on smaller screens */
+  .nav-links {
+    display: none; /* Hide box elements on smaller screens */
+    flex-direction: column;
+    position: absolute;
+    top: 4em;
+    left: 1em;
+    background-color: rgb(233, 183, 150);
+    width: 90%;
+  }
+
+  /* Show header links on click for smaller screens */
+  .nav-links.show {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-links.show a {
+    padding: 1em;
+    border: black 1px solid;
+    border-radius: 10px;
+  }
+
+  /* Adjust styles for individual header links in mobile view */
+  .nav-link {
+    margin: 0; /* Remove margin between links in mobile view */
+  }
+
+  /* Display the hamburger menu on smaller screens */
+  .ham-menu {
+    display: block;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+main img {
+  display: flex;
+  max-width: 100%; /* Prevents images from overflowing */
+  height: auto; /* Maintains aspect ratio */
+}
 #hometown {
   justify-content: space-between;
-  display: inline;
+
+  display: flex;
+  flex-direction: row;
   height: 400px;
+  width: 300px;
+}
+body {
+  display: flex;
+  background-color: #dfa590;
+}
+
+body header h2 {
+  color: rgb(15, 14, 14);
+  text-align: right;
+  font-family: cursive;
+  font-size: 1em;
+  padding-right: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #ea865f;
+  font-size: 1.25em;
+}
+
+/* Define styles for the custom header */
+.top-nav {
+  background-color: #ea865f;
+  color: #c68585;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+/* Style for the header links container */
+.nav-links {
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+}
+
+.nav-links a {
+  margin: 0 0.25em;
+}
+
+/* Style for the hamburger menu container */
+.ham-menu {
+  display: none; /* Initially hide the hamburger menu */
+  cursor: pointer;
+}
+
+/* Style for the individual bars in the hamburger menu icon */
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #0d0d0d;
+  margin: 6px 0;
+}
+
+/* Media query for responsive design - screens with a width up to 768px */
+@media only screen and (max-width: 768px) {
+  /* Adjust styles for header links on smaller screens */
+  .nav-links {
+    display: none; /* Hide box elements on smaller screens */
+    flex-direction: column;
+    position: absolute;
+    top: 4em;
+    left: 1em;
+    background-color: rgb(233, 183, 150);
+    width: 90%;
+  }
+
+  /* Show header links on click for smaller screens */
+  .nav-links.show {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-links.show a {
+    padding: 1em;
+    border: black 1px solid;
+    border-radius: 10px;
+  }
+
+  /* Adjust styles for individual header links in mobile view */
+  .nav-link {
+    margin: 0; /* Remove margin between links in mobile view */
+  }
+
+  /* Display the hamburger menu on smaller screens */
+  .ham-menu {
+    display: block;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping to a new row when space runs out */
+  flex-direction: row; /* Ensures horizontal layout first */
+  gap: 40px; /* Adds space between items */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Aligns items vertically */
+  width: 100%; /* Ensures the container spans full width */
+}
+main a {
+  display: flex;
+  max-height: 200px;
+  max-width: 200px;
+}
+
+main img {
+  display: flex;
+  max-width: 100%; /* Prevents images from overflowing */
+  height: 400px; /* Maintains aspect ratio */
   width: 300px;
 }
