@@ -15,15 +15,18 @@ This project is about something near and dear to my heart…quilting. When I was
 ## Features:
 
 **API: Foxes**
+Retrieve data from a third-party API and use it to display something within your app.
 
-My API was the product of trial and error. Various tutorials were used as well as feedback from fellow students and mentors. It is on the Information page to provide a break for a crafter when things don’t go well.
+The API that I used was the product of trial and error. Various tutorials were used as well as feedback from fellow students and mentors. It is on the Information page to provide a break for a crafter when things don’t go well.
 
 **Map: Google Maps:**
+Use arrays, objects, sets or maps to store and retrieve information that is displayed in your app.
 
-Google provided the code for this aspect of the project. I felt it was a good addition as I travel looking for crafting stores and a good map resource is essential. It defaults to Joann’s as that store is a favorite of mine
+Google provided the code for this aspect of the project. I felt it was a good addition as I travel looking for crafting stores and a good map resource is essential. It defaults to Joann’s Fabric and Crafts as that supply store is a favorite of mine
 
 **inches/Centimeter Converter:**
-
+Convert user input between two formats and display the result. (
+    
 Many times I have gotten a pattern from someone and it would be in cm and I would have to convert it to inches before I could use it. Also, outside the US, the metric system is used so the dimensions of cloth pieces may be deceptive.
 
 **Email contact form:**
@@ -59,12 +62,16 @@ A way for fellow crafters to share ideas with the site or ask questions of me.
 
 - To exit the virtual environment type “deactivate” in the git/terminal window.
 
+Note: The QR codes on the Patterns page may not be scannable as the trial may have expired. However, they will still work as buttons. Also, I have items in the img folder that are not yet included in the project. I am wanting to use them later.
+
 **Acknowledgements:**
 
 I would like to thank my mentors, Blake Herbert and Michael Puckett for the encouragement/motivation and syntax/coding suggestions.
 
-Chris Metcalfe, Jodie Mullins. Sebastian Frohm, and Ken Quiggens answered questions, shared ideas and made recommendations on when and where I should alter my code.
+Chris Metcalfe, Jodie Mullins. Sebastian Frohm, Ivy Ownn and Ken Quiggens answered questions, shared ideas and made recommendations on when and where I should alter my code.
 
 I used a few websites to also get help with definitions, syntax and steps: Google, Pluralsight, Scrimba, Free Code Camp and MDN. There were others that I used to find information, but these are the ones I used the most.
 
-A huge “Thank you” to the Fat Quarter Shop, for permission to use some of the patterns and pictures from their site.
+I used ChatGPT when I knew my syntax was off and couldn't find the issue, for "why isn't this working? questions.
+
+A huge “Thank you” to the Fat Quarter Shop, for permission to use the patterns and pictures from their site.

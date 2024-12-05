@@ -7,7 +7,7 @@ body {
 }
 
 body header h2 {
-  color: rgb(34, 26, 26);
+  color: rgb(15, 14, 14);
   text-align: center;
   font-family: cursive;
   font-size: 1em;
@@ -17,7 +17,7 @@ body header h2 {
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
   width: 100%;
   background-color: #ea865f;
   font-size: 1.25em;
