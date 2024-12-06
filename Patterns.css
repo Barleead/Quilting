@@ -11,7 +11,17 @@ body header h2 {
   font-size: 1em;
   padding-right: 20px;
 }
-
+main box {
+  display: flex;
+  align-items: center;
+  color: rgb(188, 12, 12);
+  gap: 1em;
+  border: 4px dashed;
+  border-color: darkgreen;
+  background-color: bisque;
+  font-size: 1.5em;
+  padding: 5px;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -74,15 +84,6 @@ main a {
 main img {
   max-width: 100%; /* Prevents images from overflowing */
   height: 400px; /* Maintains aspect ratio */
-  width: 300px;
-}
-
-#hometown {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 1em;
-  height: 400px;
   width: 300px;
 }
 

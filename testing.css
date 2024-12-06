@@ -12,8 +12,10 @@ body header h2 {
   padding-right: 20px;
 }
 main box {
+  display: flex;
+  align-items: center;
   color: rgb(188, 12, 12);
-  width: 70%;
+  gap: 1em;
   border: 4px dashed;
   border-color: darkgreen;
   background-color: bisque;
@@ -82,15 +84,6 @@ main a {
 main img {
   max-width: 100%; /* Prevents images from overflowing */
   height: 400px; /* Maintains aspect ratio */
-  width: 300px;
-}
-
-#hometown {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 1em;
-  height: 400px;
   width: 300px;
 }
 
