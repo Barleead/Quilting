@@ -1,78 +1,174 @@
-</html><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta
-      charset="utf-8"
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
+  <head
+    <meta charset="utf-8" name="viewport"
+    content="width=device-width, initial-scale=1.0"
     />
-    <title>Quilting-Patterns</title>
+    <title>Quilting-Contact</title>
+    <link rel="stylesheet" href="testing.css" /> 
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="testing.css" />
-  </head>
+    <title>Contact Form</title>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        // require ('dotenv').config()
 
-  <body>
-    <header>
+        const serviceId = process.env.EMAILJS_SERVICE_ID;
 
+        const templateId = process.env.EMAILJS_TEMPLATE_ID;
+
+        const userId = process.env.EMAILJS_USER_ID;
+
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "1Hx6UWBlA_Bu8x1bA",
+            });
+        })();
+    </script> -->
+
+   
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+
+      var data = {
+      to_name: "Barb",
+      from_name: "you",
+      message: "Thank you",
+      service_id: 'service_iyaus6g',
+      template_id: 'template_wx3w40r',
+      user_id: 'public key here',
+    };
+    console.log(JSON.stringify(data));
+
+    fetch('https://api.emailjs.com/api/v1.0/email/send', {
+    method: 'POST',
+    data: JSON.stringify(data),
+    contentType: 'application/json' }).then(response => {
+        if (!response.ok) {
+          console.log(response);
+            // return response.json().then(err => {
+            //   console.log(err);
+            //   throw new Error('Server error: ' + err.message);
+            // });
+        }
+        return response.json();
+    })
+    .then(result => {
+        alert('Your mail is sent!');
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Oops... ' + error.message);
+    });
+                // these IDs from the previous steps
+
+            //     emailjs.sendForm('contact_service', 'contact_form', this)
+            //         .then(() => {
+            //             console.log('SUCCESS!');
+            //         }, (error) => {
+            //             console.log('FAILED...', error);
+            //         });
+            // });
+        })}
+    </script>
+</head>
+    
+  
+ 
+  <header>
+    
       <div class="top-nav">
-        <div class="ham-menu">
+          <div class="ham-menu">
           <div class="bar"></div>
           <div class="bar"></div>
           <div class="bar"></div>
         </div>
 
-        <div class="nav-links">        
-            <a href="index.html">Home</a></li>
-            <a href="Resources.html">Resources</a></li>
-            <a href="Information.html">Information</a></li>
-            <a href="Patterns.html">Patterns</a></li>
-            <a href="Contact.html">Contact</a></li>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="Resources.html">Resources</a>
+            <a href="Information.html">Information</a>
+            <a href="Patterns.html">Patterns</a>
+            <a href="Contact.html">Contact</a>
          
+        </div>  
       </div>
-      </div>
-      
-      <h2>Patterns - I 💞️ Quilting</h2>
-      
-    </header>
+
+    <h2>Contact - I 💞️ Quilting</h2>
+  </header>
+
+<main>
+  <body>
+    <br />
+    <h2>
+      If you have any ideas, comments or tips/tricks to share, please fill out
+      the form below and let the developers/crafters know your thoughts. Thank you so much for your
+      feedback.
+    </h2>
+    <br />
+    <h4>*Hitting send will open your default email client</h4>
+
     
-    <main>
-      <h2> These are some of my favorite patterns from the Fat Quarter Shop.  You can either click or scan the QR code to the right of the pattern image to reach their site. </h2></h>
-      
-      <box>
-        <img id="hometown" src="img/hometownsampler.png" alt="Picture Hometown Sampler"/>
+  
+
+
+    <box>
+      <form id="contact-form"
+        action="mailto:badkins0043@gmail.com"
+        method="post"
+        enctype="text/plain"
+      >
     
-        <a rel="noopener" href="https://www.fatquartershop.com/home-town-holiday-sampler-quilt-pattern-lori-holt-of-bee-in-my-bonnet" target="_blank" >
-        <img src="img/HometownQR-1024.png" alt="QR Code" style="height: 200px" /></a>
-     
-      </box>
+        <label title="Name">What is your name:</label>
+        <input type="hidden" name="contact_number" value="697483">
+        <input
+          type="text"
+          name="Name"
+          size="25"
+          placeholder="Name" required
+        />
+       
+        <label title="Topic">What are we chatting about?:</label>
+        <input
+          type="text"
+          name="Topic"
+          size="25"
+          placeholder="Topic" required />
 
-      <box>
-      <img id="Snowman" src="img/snowman.png" alt="Snowman"/>
-      
-      <a rel="noopener" href="https://www.fatquartershop.com/the-quilted-snowman-quilt-pattern-lori-holt-of-bee-in-my-bonnet" target="_blank">
-      <img src="img/SnowmanQR-1024.png" alt="QR Code" style="height: 200px"/></a>
-      </box>
+        <label title="Email">What is your email address:</label>
+        <input
+          type="text"
+          name="Email"
+          size="25"
+          placeholder="Email"
+          required
+        />
 
-      <box>
-      <img id="Neighborhood" src="img/neighborhood.png" alt="Neighborhood"/>
-     
-      <a rel="noopener" href="https://www.fatquartershop.com/friendly-neighborhood-quilt-pattern-wendy-sheppard?dailydealproduct=true" target="_blank" >
-      <img src="img/NeighborhoodQR-1024.png" alt="QR Code" style="height: 200px" />
-      </a>
-      </box>
+        <label title="Comment">Please enter your message:</label>
+        <input
+          type="text"
+          name="Message"
+          size="25"
+          placeholder="Message"
+          required
+        />
 
-      <box>
-      <img id="Picnic" src="img/picnic.png" alt="Picnic"/>
-      
-      <a rel="noopener" href="https://www.fatquartershop.com/picnic-downloadable-pdf-quilt-pattern-cluck-cluck-sew" target="_blank">
-      <img src="img/PicnicQR-1024.png" alt="QR Code" style="height: 200px"/></a>
-      </box>
-      </
+        <input type="submit" value="Send" />
+        <input type="reset" value="Reset" />
+      </form>
+    </box>
+    
+    
+    <p>You may email me, personally
+      <a href="mailto:badkins0043@gmail.com">here.</a></p>
+   
+   
+   
+    </main>
       <script src="mobile.js"></script>
+      
+
   </body>
 </html>
-
