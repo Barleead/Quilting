@@ -1,13 +1,40 @@
+<!--Manny Ledoux helped me with emailjs block.-->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head
     <meta charset="utf-8" name="viewport"
     content="width=device-width, initial-scale=1.0"
     />
     <title>Quilting-Contact</title>
-    <link rel="stylesheet" href="Contact.css" />
-  </head>
+    <link rel="stylesheet" href="Contact.css" /> 
 
+    <title>Contact Form</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+       
+    <script type="text/javascript">
+      (function() {
+           // https://dashboard.emailjs.com/admin/account
+           emailjs.init("");
+       })();
+       window.onload = function() {
+           document.getElementById('contact-form').addEventListener('submit', function(event) {
+               event.preventDefault();
+
+               emailjs.sendForm('service_iyaus6g', 'template_wx3w40r', this)
+                   .then(() => {
+                       console.log('SUCCESS!');
+                       alert('Email sent successfully!');
+                   }, (error) => {
+                       console.log('FAILED...', error);
+                       alert('Email not sent! Check information and try again.');
+                   });
+           });
+       }
+   </script>
+             
+</head>
+    
+  
   <header>
     
       <div class="top-nav">
@@ -39,49 +66,39 @@
       feedback.
     </h2>
     <br />
-    <h4>*Hitting send will open your default email client</h4>
+     
+  
+
 
     <box>
-      <form
-        action="mailto:badkins0043@gmail.com"
-        method="post"
-        enctype="text/plain"
-      >
-       <br />
-        <label title="Name">What is your name:</label>
+      <form id="contact-form"
+            
+        <label title="Name">Who are you emailing?</label>
+        <input type="hidden" name="contact_number" value="697483">
         <input
           type="text"
-          name="Name"
+          name="to_name"
           size="25"
-          placeholder="Name"
-        /><br /><br />
-
-        <br />
-        <label title="Topic">What are we chatting about?:</label>
+          placeholder="Recipient Name" required
+        />
+          
+        <label title="Name">What is your name?</label>
         <input
           type="text"
-          name="Topic"
+          name="from_name"
           size="25"
-          placeholder="Topic"
-        /><br /><br />
+          placeholder="Your name"
+          required
+        />
 
-     <br />
-        <label title="Email">What is your email address:</label>
-        <input
-          type="text"
-          name="Email"
-          size="25"
-          placeholder="Email"
-        /><br /><br />
-
-        <br />
         <label title="Comment">Please enter your message:</label>
         <input
           type="text"
-          name="Message"
+          name="message"
           size="25"
           placeholder="Message"
-        /><br /><br />
+          required
+        />
 
         <input type="submit" value="Send" />
         <input type="reset" value="Reset" />
@@ -96,6 +113,7 @@
    
     </main>
       <script src="mobile.js"></script>
+      
 
   </body>
 </html>

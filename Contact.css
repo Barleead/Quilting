@@ -90,12 +90,20 @@ header {
   }
 }
 
-form {
-  font-size: 1.25em;
+label,
+form,
+input {
+  display: block;
+  font-size: 20px;
   color: #7f7d95;
   align-items: left;
-  justify-content: left;
+  justify-content: space-between;
   text-align: left;
+}
+
+input {
+  margin: 1em;
+  align-items: right;
 }
 
 box {

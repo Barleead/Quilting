@@ -1,174 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
   <head
-    <meta charset="utf-8" name="viewport"
-    content="width=device-width, initial-scale=1.0"
-    />
-    <title>Quilting-Contact</title>
-    <link rel="stylesheet" href="testing.css" /> 
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Quilting-Resources</title>
+    <link rel="stylesheet" href="testing.css" />
+  </head>
 
-    <title>Contact Form</title>
-    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-        // require ('dotenv').config()
-
-        const serviceId = process.env.EMAILJS_SERVICE_ID;
-
-        const templateId = process.env.EMAILJS_TEMPLATE_ID;
-
-        const userId = process.env.EMAILJS_USER_ID;
-
-        (function() {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init({
-              publicKey: "1Hx6UWBlA_Bu8x1bA",
-            });
-        })();
-    </script> -->
-
-   
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-
-      var data = {
-      to_name: "Barb",
-      from_name: "you",
-      message: "Thank you",
-      service_id: 'service_iyaus6g',
-      template_id: 'template_wx3w40r',
-      user_id: 'public key here',
-    };
-    console.log(JSON.stringify(data));
-
-    fetch('https://api.emailjs.com/api/v1.0/email/send', {
-    method: 'POST',
-    data: JSON.stringify(data),
-    contentType: 'application/json' }).then(response => {
-        if (!response.ok) {
-          console.log(response);
-            // return response.json().then(err => {
-            //   console.log(err);
-            //   throw new Error('Server error: ' + err.message);
-            // });
-        }
-        return response.json();
-    })
-    .then(result => {
-        alert('Your mail is sent!');
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        alert('Oops... ' + error.message);
-    });
-                // these IDs from the previous steps
-
-            //     emailjs.sendForm('contact_service', 'contact_form', this)
-            //         .then(() => {
-            //             console.log('SUCCESS!');
-            //         }, (error) => {
-            //             console.log('FAILED...', error);
-            //         });
-            // });
-        })}
-    </script>
-</head>
-    
-  
- 
-  <header>
-    
+  <!-- Google.maps provided the original code for the embedded map.  I moved the style information to my css page and added the class, adjusted the size. -->
+  <body>
+    <header>
       <div class="top-nav">
-          <div class="ham-menu">
+        <div class="ham-menu">
           <div class="bar"></div>
           <div class="bar"></div>
           <div class="bar"></div>
         </div>
 
         <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="Resources.html">Resources</a>
-            <a href="Information.html">Information</a>
-            <a href="Patterns.html">Patterns</a>
-            <a href="Contact.html">Contact</a>
-         
-        </div>  
+          <a href="index.html">Home</a>
+          <a href="Resources.html">Resources</a>
+          <a href="Information.html">Information</a>
+          <a href="Patterns.html">Patterns</a>
+          <a href="Contact.html">Contact</a>
+        </div>
       </div>
+      <h2>Resources - I 💞️ Quilting</h2>
+    </header>
 
-    <h2>Contact - I 💞️ Quilting</h2>
-  </header>
+    <box class="map-container">
+      <h2>Google Maps</h2>
+      <p>Maps can be very useful when locating a crafting</p>
+      <p>shop in an unfamiliar location. Just click on</p>
+      <p>"View larger map" to open the map in another window.</p>
 
-<main>
-  <body>
-    <br />
-    <h2>
-      If you have any ideas, comments or tips/tricks to share, please fill out
-      the form below and let the developers/crafters know your thoughts. Thank you so much for your
-      feedback.
-    </h2>
-    <br />
-    <h4>*Hitting send will open your default email client</h4>
-
-    
-  
-
-
-    <box>
-      <form id="contact-form"
-        action="mailto:badkins0043@gmail.com"
-        method="post"
-        enctype="text/plain"
-      >
-    
-        <label title="Name">What is your name:</label>
-        <input type="hidden" name="contact_number" value="697483">
-        <input
-          type="text"
-          name="Name"
-          size="25"
-          placeholder="Name" required
-        />
-       
-        <label title="Topic">What are we chatting about?:</label>
-        <input
-          type="text"
-          name="Topic"
-          size="25"
-          placeholder="Topic" required />
-
-        <label title="Email">What is your email address:</label>
-        <input
-          type="text"
-          name="Email"
-          size="25"
-          placeholder="Email"
-          required
-        />
-
-        <label title="Comment">Please enter your message:</label>
-        <input
-          type="text"
-          name="Message"
-          size="25"
-          placeholder="Message"
-          required
-        />
-
-        <input type="submit" value="Send" />
-        <input type="reset" value="Reset" />
-      </form>
+      <iframe
+        title="Maps"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.3685238237967!2d-84.5246299146816!3d37.99186379960989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88425b6291e9ab99%3A0x9f4454275ad60d0b!2sJOANN%20Fabric%20and%20Crafts!5e0!3m2!1sen!2sus!4v1728509379407!5m2!1sen!2sus"
+        width="275"
+        height="200"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        >>
+      </iframe>
     </box>
-    
-    
-    <p>You may email me, personally
-      <a href="mailto:badkins0043@gmail.com">here.</a></p>
-   
-   
-   
-    </main>
-      <script src="mobile.js"></script>
-      
 
+    <!-- Obtained the original idea for the converter from w3schools.com.  The drop down was added as I was having issues getting both conversion options to work while both were on the same page. -->
+    
+    <box>
+      <section class="converter">
+      <h2>Unit Converter</h2>
+
+      <p>Sometimes patterns/instructions are given in a different unit of</p>
+      <p>measure. The converter below may take some of the stress</p>
+      <p>out of the measurement process.</p>
+
+      <h3>Select a conversion type:</h3>
+
+      <label for="conversionType">Unit Converter</label>
+      <select id="conversionType" onchange="updateConversionType()">
+        <title>conversion</title>
+        <option value="inchesToCm">Inches to Centimeters</option>
+        <option value="cmToInches">Centimeters to Inches</option>
+      </select>
+      <p>
+        <label id="inputLabel">Inches</label>
+        <input
+          id="inputValue"
+          type="number"
+          placeholder="Enter value"
+          oninput="performConversion()"
+        />
+      </p>
+      <p>
+        <span id="outputLabel">Centimeters:</span>
+        <span id="outputValue"></span>
+      </p>
+    </section>
+
+    <script>
+      function updateConversionType() {
+        const conversionType = document.getElementById("conversionType").value;
+        const inputLabel = document.getElementById("inputLabel");
+        const outputLabel = document.getElementById("outputLabel");
+
+        if (conversionType === "inchesToCm") {
+          inputLabel.textContent = "Inches";
+          outputLabel.textContent = "Centimeters:";
+        } else {
+          inputLabel.textContent = "Centimeters";
+          outputLabel.textContent = "Inches:";
+        }
+
+        performConversion(); // Update conversion output based on the selected type.
+      }
+
+      function performConversion() {
+        const conversionType = document.getElementById("conversionType").value;
+        const inputValue =
+          parseFloat(document.getElementById("inputValue").value) || 0;
+        let outputValue = 0;
+
+        if (conversionType === "inchesToCm") {
+          outputValue = inputValue / 0.3937; // Convert inches to cm.
+        } else {
+          outputValue = inputValue * 0.3937; // Convert cm to inches.
+        }
+
+        document.getElementById("outputValue").textContent =
+          outputValue.toFixed(2);
+      }
+
+      // Initialize the conversion display on page load.
+      updateConversionType();
+    </script>
+    </box>
+
+    <script src="mobile.js"></script>
   </body>
 </html>

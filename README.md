@@ -20,16 +20,16 @@ Retrieve data from a third-party API and use it to display something within your
 The API that I used was the product of trial and error. Various tutorials were used as well as feedback from fellow students and mentors. It is on the Information page to provide a break for a crafter when things don’t go well.
 
 **Map: Google Maps:**
-Use arrays, objects, sets or maps to store and retrieve information that is displayed in your app.
 
 Google provided the code for this aspect of the project. I felt it was a good addition as I travel looking for crafting stores and a good map resource is essential. It defaults to Joann’s Fabric and Crafts as that supply store is a favorite of mine
 
 **inches/Centimeter Converter:**
 Convert user input between two formats and display the result. (
-    
+
 Many times I have gotten a pattern from someone and it would be in cm and I would have to convert it to inches before I could use it. Also, outside the US, the metric system is used so the dimensions of cloth pieces may be deceptive.
 
 **Email contact form:**
+Form that accepts information from user and lets them know whether or not it was successful
 
 A way for fellow crafters to share ideas with the site or ask questions of me.
 
@@ -62,7 +62,7 @@ A way for fellow crafters to share ideas with the site or ask questions of me.
 
 - To exit the virtual environment type “deactivate” in the git/terminal window.
 
-Note: The QR codes on the Patterns page may not be scannable as the trial may have expired. However, they will still work as buttons. Also, I have items in the img folder that are not yet included in the project. I am wanting to use them later.
+Note: The QR codes on the Patterns page may not be scannable as the trial may have expired. However, they will still work as buttons. Also, I have items in the img folder that are not yet included in the project. I am wanting to use them later. The key for line 17 on Contact.html is missing. Before sending an email please input the code 1Hx6UWBlA_Bu8x1bA inside the quotation marks on that line.
 
 **Acknowledgements:**
 
