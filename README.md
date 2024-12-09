@@ -12,10 +12,15 @@ This project is about something near and dear to my heart…quilting. When I was
 - **Patterns**: just a few of my favorites with links to Fat Quarter Quilts where you can browse their site and maybe find your own favorites.
 - **Contact**: A way for visitors to start a conversation with me about any questions/topics.
 
-## Features:
+## Requirements met:
+
+1. Retrieve data from a third-party API and use it to display something within your app.
+2. Convert user input between two formats and display the result. (e.g. Fahrenheit to Celcius, kilograms to pounds, etc)
+3. Use arrays, objects, sets or maps to store and retrieve information that is displayed in your app.
+
+## Capstone Features:
 
 **API: Foxes**
-Retrieve data from a third-party API and use it to display something within your app.
 
 The API that I used was the product of trial and error. Various tutorials were used as well as feedback from fellow students and mentors. It is on the Information page to provide a break for a crafter when things don’t go well.
 
@@ -24,12 +29,10 @@ The API that I used was the product of trial and error. Various tutorials were u
 Google provided the code for this aspect of the project. I felt it was a good addition as I travel looking for crafting stores and a good map resource is essential. It defaults to Joann’s Fabric and Crafts as that supply store is a favorite of mine
 
 **inches/Centimeter Converter:**
-Convert user input between two formats and display the result. (
 
 Many times I have gotten a pattern from someone and it would be in cm and I would have to convert it to inches before I could use it. Also, outside the US, the metric system is used so the dimensions of cloth pieces may be deceptive.
 
 **Email contact form:**
-Form that accepts information from user and lets them know whether or not it was successful
 
 A way for fellow crafters to share ideas with the site or ask questions of me.
 
@@ -57,12 +60,14 @@ A way for fellow crafters to share ideas with the site or ask questions of me.
 
 - After the virtual environment is created, type “git clone” followed by the URL you copied when cloning the repository.
 
-- Open VS code and navigate to File > Open Folder. Then navigate to the location where the repository was copied. Highlight the “Quilting” folder and select folder.
+- Open VS code and navigate to File > Open Folder. Then navigate to the location where the repository was copied. Highlight the “Quilting” folder and click select folder.
 - If you already have the Live Server extension then you can right click on any .html file and choose “Open with Live Server”. If you do not have the extension, you can add it by selecting the extensions icon (on the left) and searching for Live Server.
 
 - To exit the virtual environment type “deactivate” in the git/terminal window.
 
-Note: The QR codes on the Patterns page may not be scannable as the trial may have expired. However, they will still work as buttons. Also, I have items in the img folder that are not yet included in the project. I am wanting to use them later. The key for line 17 on Contact.html is missing. Before sending an email please input the code 1Hx6UWBlA_Bu8x1bA inside the quotation marks on that line.
+Note: The QR codes on the Patterns page may not be scannable as the trial may have expired. However, they will still work as buttons. Also, I have items in the img folder that are not yet included in the project. I am wanting to use them later.
+
+The key for line 17 on Contact.html is missing. It will need to be added before sending an email. To get the code, please message me on slack if needed.
 
 **Acknowledgements:**
 

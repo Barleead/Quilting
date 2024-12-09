@@ -1,4 +1,5 @@
-body {
+body,
+html {
   display: flex;
   flex-direction: column;
   background-image: url("img/Quilt.jpg");
@@ -31,13 +32,13 @@ header {
   color: #c68585;
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0;
 }
 
 /* Style for the header links container */
 .nav-links {
   display: flex;
-  align-items: left;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -99,15 +100,15 @@ main {
   flex-direction: column;
 }
 
-box {
+.box {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5px;
 }
 
-box p,
-box h2 {
+.box p,
+.box h2 {
   color: rgb(188, 12, 12);
   width: 70%;
   border: 4px dashed;
@@ -115,6 +116,7 @@ box h2 {
   background-color: bisque;
   font-size: 1.5em;
   padding: 5px;
+  border-radius: 1em;
 }
 
 .Directory {

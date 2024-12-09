@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head
@@ -27,7 +28,7 @@
       <h2>Resources - I 💞️ Quilting</h2>
     </header>
 
-    <box class="map-container">
+    <div class="box">
       <h2>Google Maps</h2>
       <p>Maps can be very useful when locating a crafting</p>
       <p>shop in an unfamiliar location. Just click on</p>
@@ -44,12 +45,13 @@
         referrerpolicy="no-referrer-when-downgrade"
         >>
       </iframe>
-    </box>
+    </div>
 
     <!-- Obtained the original idea for the converter from w3schools.com.  The drop down was added as I was having issues getting both conversion options to work while both were on the same page. -->
     
-    <box>
-      <section class="converter">
+    <div>
+    
+      <section class="box">
       <h2>Unit Converter</h2>
 
       <p>Sometimes patterns/instructions are given in a different unit of</p>
@@ -59,8 +61,9 @@
       <h3>Select a conversion type:</h3>
 
       <label for="conversionType">Unit Converter</label>
+      <title>conversion</title>
       <select id="conversionType" onchange="updateConversionType()">
-        <title>conversion</title>
+        
         <option value="inchesToCm">Inches to Centimeters</option>
         <option value="cmToInches">Centimeters to Inches</option>
       </select>
@@ -115,7 +118,7 @@
       // Initialize the conversion display on page load.
       updateConversionType();
     </script>
-    </box>
+    </div>
 
     <script src="mobile.js"></script>
   </body>
