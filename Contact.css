@@ -106,7 +106,7 @@ input {
   align-items: right;
 }
 
-box {
+.box {
   display: flex;
   justify-content: center;
   align-items: left;
@@ -115,4 +115,5 @@ box {
   border: 4px dashed;
   border-color: darkgreen;
   background-color: bisque;
+  border-radius: 1em;
 }

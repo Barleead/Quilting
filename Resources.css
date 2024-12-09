@@ -105,11 +105,8 @@ p {
 }
 
 iframe {
-  border-color: aquamarine;
-  border-width: 1em;
-  padding: 2px;
+  color: #1d1c1c;
 }
-
 label,
 span {
   color: #1d1c1c;
@@ -124,4 +121,6 @@ span {
   border-radius: 1em;
   border-color: darkgreen;
   background-color: bisque;
+  padding: 1em;
+  margin: 1em;
 }
