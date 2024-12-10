@@ -19,7 +19,7 @@ header {
   justify-content: space-between;
   align-items: left;
   width: 100%;
-  background-color: #ea865f;
+  background-color: #6bb99b;
   font-size: 1.25em;
 }
 
@@ -37,7 +37,7 @@ header {
 
 /* Define styles for the custom header */
 .top-nav {
-  background-color: #ea865f;
+  background-color: #6bb99b;
   color: #c68585;
   display: flex;
   justify-content: space-between;
@@ -135,6 +135,7 @@ header {
   box-sizing: border-box;
   border-radius: 1em;
   padding: 1em;
+  margin: 1em;
 }
 
 #tipsTricksButton {
@@ -157,9 +158,9 @@ header {
   height: 3em;
   border-radius: 1em;
 }
-button {
+.button {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  gap: 1em;
   margin: 1em;
+  padding: 1em;
 }

@@ -1,7 +1,7 @@
 body {
   display: flex;
   flex-direction: column;
-  background-color: #dfa590;
+  background-color: #e9a7ab;
 }
 
 body header h2 {
@@ -29,13 +29,13 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: #ea865f;
+  background-color: #c7abee;
   font-size: 1.25em;
 }
 
 /* Define styles for the custom header */
 .top-nav {
-  background-color: #ea865f;
+  background-color: #c7abee;
   color: #c68585;
   display: flex;
   justify-content: space-between;

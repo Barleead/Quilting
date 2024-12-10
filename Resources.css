@@ -20,13 +20,13 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: #ea865f;
+  background-color: #a2ec9d;
   font-size: 1.25em;
 }
 
 /* Define styles for the custom header */
 .top-nav {
-  background-color: #ea865f;
+  background-color: #a2ec9d;
   color: #c68585;
   display: flex;
   justify-content: space-between;
