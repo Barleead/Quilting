@@ -17,9 +17,8 @@ body header h2 {
   color: rgb(188, 12, 12);
   gap: 1em;
   border: 4px dashed;
-  border-color: darkgreen;
+  border-color: #a5e9e4;
   background-color: bisque;
-  font-size: 1.5em;
   padding: 5px;
   border-radius: 1em;
 }
@@ -29,14 +28,13 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: #c7abee;
+  background-color: #a5e9e4;
   font-size: 1.25em;
 }
 
 /* Define styles for the custom header */
 .top-nav {
-  background-color: #c7abee;
-  color: #c68585;
+  background-color: #a5e9e4;
   display: flex;
   justify-content: space-between;
   padding: 1rem;

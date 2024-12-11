@@ -22,14 +22,14 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: #ea865f;
+  background-color: #3CA6AA;
   font-size: 1.25em;
 }
 
 /* Define styles for the custom header */
 .top-nav {
-  background-color: #ea865f;
-  color: #c68585;
+  background-color: #3CA6AA;
+
   display: flex;
   justify-content: space-between;
   padding: 0;
@@ -112,7 +112,7 @@ main {
   color: rgb(188, 12, 12);
   width: 70%;
   border: 4px dashed;
-  border-color: darkgreen;
+  border-color: #3CA6AA;
   background-color: bisque;
   font-size: 1.5em;
   padding: 5px;
