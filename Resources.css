@@ -24,7 +24,7 @@ header {
   font-size: 1.25em;
 }
 
-/* Define styles for the custom header */
+/* Header navigation */
 .top-nav {
   background-color: #94d0d6;
   color: #c68585;
@@ -33,7 +33,6 @@ header {
   padding: 1rem;
 }
 
-/* Style for the header links container */
 .nav-links {
   display: flex;
   align-items: left;
@@ -44,25 +43,21 @@ header {
   margin: 0 0.25em;
 }
 
-/* Style for the hamburger menu container */
 .ham-menu {
-  display: none; /* Initially hide the hamburger menu */
+  display: none;
   cursor: pointer;
 }
 
-/* Style for the individual bars in the hamburger menu icon */
 .bar {
   width: 25px;
   height: 3px;
   background-color: #0d0d0d;
   margin: 6px 0;
 }
-
-/* Media query for responsive design - screens with a width up to 768px */
+/* Screen size mobile */
 @media only screen and (max-width: 768px) {
-  /* Adjust styles for header links on smaller screens */
   .nav-links {
-    display: none; /* Hide box elements on smaller screens */
+    display: none;
     flex-direction: column;
     position: absolute;
     top: 4em;
@@ -71,7 +66,6 @@ header {
     width: 90%;
   }
 
-  /* Show header links on click for smaller screens */
   .nav-links.show {
     display: flex;
     flex-direction: column;
@@ -83,12 +77,10 @@ header {
     border-radius: 10px;
   }
 
-  /* Adjust styles for individual header links in mobile view */
   .nav-link {
-    margin: 0; /* Remove margin between links in mobile view */
+    margin: 0;
   }
 
-  /* Display the hamburger menu on smaller screens */
   .ham-menu {
     display: block;
   }

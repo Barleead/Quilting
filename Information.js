@@ -12,7 +12,7 @@ function fetchFoxes() {
       }
     })
     .then((data) => {
-      // Process the response data here
+      
       if (foxImage === null) {
         foxImage = document.createElement("img");
         foxImage.src = data.image;
@@ -23,7 +23,7 @@ function fetchFoxes() {
       }
     })
     .catch((error) => {
-      // errors? he}re
+     
       console.error(error);
       document.getElementById("API-container").innerHTML =
         "Didn't Load: ${error.message}";

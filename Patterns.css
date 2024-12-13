@@ -32,7 +32,7 @@ header {
   font-size: 1.25em;
 }
 
-/* Define styles for the custom header */
+/* Header navigation */
 .top-nav {
   background-color: #a5e9e4;
   display: flex;
@@ -40,7 +40,6 @@ header {
   padding: 1rem;
 }
 
-/* Style for the header links container */
 .nav-links {
   display: flex;
   align-items: flex-start;
@@ -51,13 +50,11 @@ header {
   margin: 0 0.25em;
 }
 
-/* Style for the hamburger menu container */
 .ham-menu {
-  display: none; /* Initially hide the hamburger menu */
+  display: none; 
   cursor: pointer;
 }
 
-/* Style for the individual bars in the hamburger menu icon */
 .bar {
   width: 25px;
   height: 3px;
@@ -67,12 +64,12 @@ header {
 
 main {
   display: flex;
-  flex-wrap: wrap; /* Allows wrapping to a new row when space runs out */
-  flex-direction: row; /* Ensures horizontal layout first */
-  gap: 40px; /* Adds space between items */
-  justify-content: center; /* Centers content horizontally */
-  align-items: center; /* Aligns items vertically */
-  width: 100%; /* Ensures the container spans full width */
+  flex-wrap: wrap; 
+  flex-direction: row; 
+  gap: 40px; 
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
 }
 
 main a {
@@ -82,15 +79,15 @@ main a {
 }
 
 main img {
-  max-width: 100%; /* Prevents images from overflowing */
-  height: 400px; /* Maintains aspect ratio */
+  max-width: 100%; 
+  height: 400px; 
   width: 300px;
 }
 
-/* Media query for responsive design - screens with a width up to 768px */
+/* Screen size mobile */
 @media only screen and (max-width: 768px) {
   .nav-links {
-    display: none; /* Hide box elements on smaller screens */
+    display: none; 
     flex-direction: column;
     position: absolute;
     top: 4em;
@@ -99,7 +96,6 @@ main img {
     width: 90%;
   }
 
-  /* Show header links on click for smaller screens */
   .nav-links.show {
     display: flex;
     flex-direction: column;
@@ -111,12 +107,11 @@ main img {
     border-radius: 10px;
   }
 
-  /* Remove margin between links in mobile view */
+
   .nav-link {
     margin: 0;
   }
 
-  /* Display the hamburger menu on smaller screens */
   .ham-menu {
     display: block;
   }

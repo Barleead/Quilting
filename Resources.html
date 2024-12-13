@@ -1,9 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head
-    <meta charset="utf-8".
-    <name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <head>
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Quilting-Resources</title>
     <link rel="stylesheet" href="Resources.css" />
   </head>
@@ -49,7 +51,7 @@
     </div>
 
     <!-- Obtained the original idea for the converter from w3schools.com.  The drop down was added as I was having issues getting both conversion options to work while both were on the same page. -->
-    
+
     <div class="box">
       <h2>Unit Converter</h2>
 
@@ -62,7 +64,6 @@
       <label for="conversionType">Unit Converter</label>
       <title>conversion</title>
       <select id="conversionType" onchange="updateConversionType()">
-        
         <option value="inchesToCm">Inches to Centimeters</option>
         <option value="cmToInches">Centimeters to Inches</option>
       </select>
@@ -79,44 +80,45 @@
         <span id="outputLabel">Centimeters:</span>
         <span id="outputValue"></span>
       </p>
-    
 
-    <script>
-      function updateConversionType() {
-        const conversionType = document.getElementById("conversionType").value;
-        const inputLabel = document.getElementById("inputLabel");
-        const outputLabel = document.getElementById("outputLabel");
+      <script>
+        function updateConversionType() {
+          const conversionType =
+            document.getElementById("conversionType").value;
+          const inputLabel = document.getElementById("inputLabel");
+          const outputLabel = document.getElementById("outputLabel");
 
-        if (conversionType === "inchesToCm") {
-          inputLabel.textContent = "Inches";
-          outputLabel.textContent = "Centimeters:";
-        } else {
-          inputLabel.textContent = "Centimeters";
-          outputLabel.textContent = "Inches:";
+          if (conversionType === "inchesToCm") {
+            inputLabel.textContent = "Inches";
+            outputLabel.textContent = "Centimeters:";
+          } else {
+            inputLabel.textContent = "Centimeters";
+            outputLabel.textContent = "Inches:";
+          }
+
+          performConversion();
         }
 
-        performConversion(); // Update conversion output based on the selected type.
-      }
+        function performConversion() {
+          const conversionType =
+            document.getElementById("conversionType").value;
+          const inputValue =
+            parseFloat(document.getElementById("inputValue").value) || 0;
+          let outputValue = 0;
 
-      function performConversion() {
-        const conversionType = document.getElementById("conversionType").value;
-        const inputValue =
-          parseFloat(document.getElementById("inputValue").value) || 0;
-        let outputValue = 0;
+          if (conversionType === "inchesToCm") {
+            outputValue = inputValue / 0.3937; // Convert inches to cm.
+          } else {
+            outputValue = inputValue * 0.3937; // Convert cm to inches.
+          }
 
-        if (conversionType === "inchesToCm") {
-          outputValue = inputValue / 0.3937; // Convert inches to cm.
-        } else {
-          outputValue = inputValue * 0.3937; // Convert cm to inches.
+          document.getElementById("outputValue").textContent =
+            outputValue.toFixed(2);
         }
 
-        document.getElementById("outputValue").textContent =
-          outputValue.toFixed(2);
-      }
-
-      // Initialize the conversion display on page load.
-      updateConversionType();
-    </script>
+        // Initialize the conversion display on page load.
+        updateConversionType();
+      </script>
     </div>
 
     <script src="mobile.js"></script>
